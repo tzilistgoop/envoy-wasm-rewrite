@@ -1,0 +1,18 @@
+[package]
+name = "url-rewrite-filter"
+version = "0.1.0"
+authors = ["Ted Zilist <ted@goop.com>"]
+edition = "2018"
+
+[lib]
+name = "path_rewrite"
+src = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+csv = "1.1"
+hashbrown = "0.7"
+lazy_static = "1.4.0"
+log = "0.4.8"
+proxy-wasm = "0.1.0"
+serde = { version = "1.0.110", features = ["derive"] }
